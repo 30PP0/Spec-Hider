@@ -1,0 +1,23 @@
+{
+  "author" : "Evgeny Belyaev",
+  "commands" : [
+    {
+      "script" : "hider.cocoascript",
+      "handler" : "hideSpecs",
+      "shortcut" : "ctrl cmd =",
+      "name" : "Spec Hider",
+      "identifier" : "spechider"
+    },
+  ],
+  "menu": {
+    "isRoot": true,
+    "items": [
+      "spechider",
+    ],
+  },
+  "identifier" : "cc.resonator.spechider",
+  "version" : "1.0",
+  "description" : "Spec Hider",
+  "authorEmail" : "belyaev.evgeny@gmail.com",
+  "name" : "Spec Hider"
+}

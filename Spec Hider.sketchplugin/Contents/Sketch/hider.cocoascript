@@ -1,0 +1,19 @@
+@import "library.js";
+
+var hideSpecs = function(context) {
+
+  var doc = context.document;
+  var toggleLayerName = "=";
+  var matchingLayers = getLayersWithName(toggleLayerName, [doc currentPage]);
+
+  if (matchingLayers.length == 0) {
+    doc.showMessage("There are no layers with \"" + toggleLayerName + "\" to toggle");
+    return;
+  }
+
+  for (var i = 0; i < matchingLayers.length; i++) {
+    var child = matchingLayers[i];
+    [child setIsVisible:![child isVisible]]
+  }
+
+};
